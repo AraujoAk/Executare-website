@@ -1,0 +1,156 @@
+/* Geral */
+.client-area-container {
+    font-family: "Mont", sans-serif;
+    color: #002f4b;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+  }
+  
+  /* Banner */
+  .client-area-banner {
+    background: linear-gradient(
+        rgba(0, 47, 75, 0.8),
+        rgba(0, 47, 75, 0.8)
+      ),
+      url("https://via.placeholder.com/1600x600") center/cover no-repeat;
+    padding: 6rem 2rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .banner-content {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .banner-logo {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  /* Links Úteis */
+  .client-area-links {
+    padding: 4rem 2rem;
+    background: #eef8f4;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #002f4b;
+  }
+  
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .link-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInCard 1.5s ease;
+  }
+  
+  .link-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-icon {
+    font-size: 3rem;
+    color: #f69149;
+    margin-bottom: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #002f4b;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Ajuda */
+  .client-area-help {
+    padding: 4rem 2rem;
+    background: #f3f8fc;
+    text-align: center;
+  }
+  
+  .help-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .help-button {
+    background-color: #f69149;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .help-button:hover {
+    background-color: #d17b3c;
+    transform: scale(1.1);
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInCard {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

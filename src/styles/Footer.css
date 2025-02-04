@@ -1,0 +1,102 @@
+/* Geral */
+.footer-container {
+    background-color: #002f4b;
+    color: #ffffff;
+    padding: 3rem 1.5rem;
+    font-family: "Mont", sans-serif;
+  }
+  
+  /* Sessão Principal */
+  .footer-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Logo e Descrição */
+  .footer-logo-section {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f8f9fa;
+  }
+  
+  /* Links Úteis */
+  .footer-links-section {
+    text-align: center;
+  }
+  
+  .footer-links-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f69149;
+  }
+  
+  .footer-links-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #f69149;
+  }
+  
+  /* Redes Sociais */
+  .footer-social-section {
+    text-align: center;
+  }
+  
+  .footer-social-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f69149;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer-social-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-social-icon:hover {
+    color: #f69149;
+    transform: scale(1.1);
+  }
+  
+  /* Rodapé Inferior */
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #f69149;
+    padding-top: 1rem;
+  }
+  
+  .footer-bottom p {
+    color: #f8f9fa;
+    margin: 0;
+  }
+  

@@ -1,0 +1,214 @@
+/* Geral */
+.home-container {
+  font-family: "Mont", sans-serif;
+  color: #002f4b;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(
+      rgba(0, 47, 75, 0.7),
+      rgba(0, 47, 75, 0.7)
+    ),
+    url("https://img.freepik.com/fotos-premium/close-de-uma-mulher-escrevendo-em-um-caderno-em-branco-com-canetas-coloridas-em-cima-da-mesa_9563-5545.jpg?w=900") center/cover no-repeat;
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #fff;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .highlight-text {
+  color: #f69149;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #f69149;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  animation: bounceIn 1.5s ease;
+}
+
+.cta-button:hover {
+  background-color: #d17b3c;
+}
+
+/* Highlights Section */
+.highlights-section {
+  background-color: #f8f9fa;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.highlights-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.highlights-section .highlight {
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  animation: slideInLeft 1s ease;
+}
+
+.highlights-section .highlight i {
+  font-size: 2.5rem;
+  color: #f69149;
+  margin-bottom: 1rem;
+}
+
+.highlights-section .highlight h3 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: #002f4b;
+}
+
+.highlights-section .highlight p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #002f4b;
+  color: #fff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(
+      rgba(0, 47, 75, 0.8),
+      rgba(0, 47, 75, 0.8)
+    ),
+    url("https://img.freepik.com/fotos-gratis/arranha-ceu-da-cidade-moderna_1359-409.jpg") center/cover no-repeat;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  animation: zoomIn 1s ease;
+}
+
+.testimonials {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial-card {
+  max-width: 300px;
+  padding: 1.5rem;
+  background-color: rgba(0, 47, 75, 0.9);
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: zoomIn 1s ease;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.testimonial-card span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+  color: #f69149;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(
+      rgba(255, 165, 0, 0.8),
+      rgba(255, 165, 0, 0.8)
+    ),
+    url("https://img.freepik.com/fotos-gratis/empresarios-animados-dando-aperto-de-mao-no-escritorio_23-2148130699.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.cta-button-secondary {
+  background-color: #fff;
+  color: #002f4b;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-secondary:hover {
+  background-color: #d17b3c;
+  color: #fff;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

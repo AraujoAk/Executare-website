@@ -1,0 +1,134 @@
+/* Estilos gerais do Header */
+.header-container {
+  background-color: #002f4b; /* Azul escuro inspirado no modelo */
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-menu .logo {
+    display: none; /* Esconde a logo no desktop */
+  }
+
+.nav-link {
+  font-family: "Mont", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f69149; /* Laranja do tema */
+}
+
+.cta-button {
+  background-color: #f69149;
+  color: #ffffff;
+  font-family: "Mont", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d17b3c;
+}
+
+.menu-toggle {
+    display: none; /* Só aparece no mobile */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 2100; /* Certifique-se de que esteja acima do menu */
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-toggle.open {
+    transform: rotate(45deg); /* Adicione uma rotação se desejar um estilo diferente */
+    color: #f69149; /* Destaque o "X" */
+  }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Aparece no mobile */
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+  }
+
+  .logo {
+    height: 65px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 47, 75, 0.8), rgba(0, 47, 75, 0.8)),
+      url("https://img.freepik.com/fotos-gratis/marcos-modernos-cidade_1359-338.jpg?t=st=1737552956~exp=1737556556~hmac=6826195e551188b459698c457757e9d1c424725aefddb9d40f1333082331b71c&w=900")
+        center/cover no-repeat; /* Imagem de fundo com sobreposição */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 2000;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+  }
+
+  .nav-menu .logo {
+    display: block;
+    margin-bottom: 0.5rem;
+    height: 90px; /* Tamanho maior da logo */
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .cta-button {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}

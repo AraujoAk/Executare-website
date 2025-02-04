@@ -1,0 +1,205 @@
+/* Geral */
+.contact-container {
+    font-family: "Mont", sans-serif;
+    color: #002f4b;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+  }
+  
+  /* Banner */
+  .contact-banner-section {
+    background: linear-gradient(
+        rgba(0, 47, 75, 0.8),
+        rgba(0, 47, 75, 0.8)
+      ),
+      url("https://via.placeholder.com/1600x400") center/cover no-repeat;
+    text-align: center;
+    color: #ffffff;
+    padding: 5rem 2rem;
+  }
+  
+  .contact-banner-title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #f69149;
+  }
+  
+  .contact-banner-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Formulário de Contato */
+  .contact-form-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .contact-form-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-input,
+  .contact-textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .contact-input:focus,
+  .contact-textarea:focus {
+    outline: none;
+    border-color: #f69149;
+  }
+  
+  .contact-submit-button {
+    background: #f69149;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-submit-button:hover {
+    background: #d17b3c;
+  }
+  
+  /* Informações de Contato */
+  .contact-info-section {
+    padding: 4rem 2rem;
+    background-color: #f3f8fc;
+    text-align: center;
+  }
+  
+  .contact-info-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info-item {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-icon {
+    font-size: 2rem;
+    color: #f69149;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-info-heading {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #002f4b;
+  }
+  
+  .contact-info-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Mapa Integrado */
+  .contact-map-section {
+    padding: 4rem 2rem;
+    background-color: #eef2f3;
+    text-align: center;
+  }
+  
+  .contact-map-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-map {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  /* Efeito de Entrada Suave */
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInCard 1s ease-out forwards;
+  }
+  
+  /* Efeito de Entrada para Cards */
+  .fade-in-card {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInCard 1s ease-out forwards;
+  }
+  
+  /* Efeito Bounce (para Botões e Títulos) */
+  .bounce-in {
+    animation: bounceIn 1s ease-out forwards;
+  }
+  
+  /* Nova Animação de Fade In */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Nova Animação para Elementos que Sobem Suavemente */
+  @keyframes fadeInCard {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Nova Animação de Bounce */
+  @keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
