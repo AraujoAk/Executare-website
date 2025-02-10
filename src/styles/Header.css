@@ -1,16 +1,23 @@
 /* Estilos gerais do Header */
 .header-container {
-  background-color: #002f4b; /* Azul escuro inspirado no modelo */
+  background-color: #002f4b; /* Cor do fundo */
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: sticky;
+  position: fixed; /* Mantém o header fixo no topo */
   top: 0;
-  z-index: 1000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que fique acima dos outros elementos */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
 }
+
+body {
+  padding-top: 80px; /* Evita que o conteúdo fique escondido sob o header */
+}
+
 
 .logo-container {
   display: flex;
