@@ -154,3 +154,76 @@
     }
   }
   
+  @media (max-width: 768px) {
+  
+    /* Banner */
+    .client-area-banner {
+      padding: 4rem 1rem; /* Reduz o padding */
+      background-position: center; /* Garante centralização da imagem */
+    }
+  
+    .banner-logo {
+      width: 100px; /* Reduz o tamanho da logo */
+      margin-bottom: 1rem;
+    }
+  
+    .banner-title {
+      font-size: 2rem; /* Ajusta o tamanho do título */
+      margin-bottom: 0.8rem;
+    }
+  
+    .banner-description {
+      font-size: 1rem; /* Reduz o tamanho do texto */
+      line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+    }
+  
+    /* Links Úteis */
+    .client-area-links {
+      padding: 3rem 1rem;
+    }
+  
+    .section-title {
+      font-size: 1.8rem; /* Ajusta o tamanho do título da seção */
+      margin-bottom: 1.5rem;
+    }
+  
+    .links-grid {
+      grid-template-columns: 1fr; /* Exibe os cards em uma coluna */
+      gap: 1.5rem; /* Reduz o espaço entre os cards */
+    }
+  
+    .link-card {
+      padding: 1.5rem; /* Reduz o padding dos cards */
+    }
+  
+    .card-icon {
+      font-size: 2.5rem; /* Ajusta o tamanho do ícone */
+      margin-bottom: 0.8rem;
+    }
+  
+    .card-title {
+      font-size: 1.2rem; /* Reduz o tamanho do título do card */
+      margin-bottom: 0.5rem;
+    }
+  
+    .card-description {
+      font-size: 0.9rem; /* Ajusta o texto do card */
+    }
+  
+    /* Ajuda */
+    .client-area-help {
+      padding: 3rem 1rem;
+    }
+  
+    .help-description {
+      font-size: 1rem; /* Reduz o tamanho do texto */
+      margin-bottom: 1.5rem;
+    }
+  
+    .help-button {
+      font-size: 0.9rem; /* Reduz o tamanho do botão */
+      padding: 0.6rem 1.5rem; /* Ajusta o padding interno */
+      border-radius: 20px; /* Ajusta o formato do botão */
+    }
+  }
+  

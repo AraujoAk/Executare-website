@@ -203,3 +203,77 @@
     }
   }
   
+  @media (max-width: 768px) {
+    
+    /* Banner */
+    .contact-banner-section {
+      padding: 3rem 1rem; /* Reduz o padding */
+    }
+  
+    .contact-banner-title {
+      font-size: 2rem; /* Reduz o tamanho do título */
+    }
+  
+    .contact-banner-description {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  
+    /* Formulário de Contato */
+    .contact-form-section {
+      padding: 3rem 1rem;
+    }
+  
+    .contact-form {
+      gap: 1rem; /* Reduz o espaço entre os campos */
+      padding: 1rem;
+    }
+  
+    .contact-input,
+    .contact-textarea {
+      padding: 0.8rem; /* Reduz o espaçamento interno */
+      font-size: 0.9rem;
+    }
+  
+    .contact-submit-button {
+      font-size: 1rem; /* Ajusta o tamanho do texto */
+      padding: 0.8rem 1.5rem;
+    }
+  
+    /* Informações de Contato */
+    .contact-info-section {
+      padding: 3rem 1rem;
+    }
+  
+    .contact-info-grid {
+      gap: 1.5rem; /* Reduz o espaço entre os itens */
+    }
+  
+    .contact-info-item {
+      padding: 1rem; /* Reduz o padding dos cards */
+      max-width: 100%; /* Faz os cards ocuparem toda a largura */
+    }
+  
+    .contact-icon {
+      font-size: 1.5rem; /* Reduz o tamanho do ícone */
+      margin-bottom: 0.3rem;
+    }
+  
+    .contact-info-heading {
+      font-size: 1rem;
+    }
+  
+    .contact-info-text {
+      font-size: 0.9rem;
+    }
+  
+    /* Mapa Integrado */
+    .contact-map-section {
+      padding: 3rem 1rem;
+    }
+  
+    .contact-map {
+      height: 300px; /* Reduz a altura do mapa */
+    }
+  }
+  

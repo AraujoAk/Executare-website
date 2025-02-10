@@ -105,11 +105,13 @@
       url("https://img.freepik.com/fotos-gratis/marcos-modernos-cidade_1359-338.jpg?t=st=1737552956~exp=1737556556~hmac=6826195e551188b459698c457757e9d1c424725aefddb9d40f1333082331b71c&w=900")
         center/cover no-repeat; /* Imagem de fundo com sobreposição */
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Começa os itens no topo */
+    align-items: flex-start; /* Alinha todos os itens à esquerda */
+    padding: 2rem; /* Espaçamento interno consistente */
     transform: translateY(-100%);
     transition: transform 0.3s ease;
     z-index: 2000;
+    gap: 1rem; /* Espaçamento entre os itens */
   }
 
   .nav-menu.open {
@@ -118,17 +120,23 @@
 
   .nav-menu .logo {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem; /* Maior espaçamento abaixo do logo */
     height: 90px; /* Tamanho maior da logo */
   }
 
   .nav-link {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+    text-align: left; /* Alinha os links à esquerda */
+    width: 100%; /* Links ocupam toda a largura */
+    font-size: 1.2rem; /* Tamanho da fonte maior para mobile */
+    margin: 0.5rem 0; /* Espaçamento vertical entre os links */
+    padding-left: 1rem; /* Recuo à esquerda para criar hierarquia visual */
   }
 
   .cta-button {
-    margin-top: 1rem;
-    font-size: 1rem;
+    align-self: stretch; /* Faz o botão ocupar toda a largura disponível */
+    margin-top: 2rem; /* Espaçamento maior do botão em relação aos links */
+    font-size: 1rem; /* Tamanho do texto do botão */
+    text-align: center; /* Centraliza o texto do botão */
+    padding: 0.8rem; /* Ajusta o espaçamento interno do botão */
   }
 }

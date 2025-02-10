@@ -47,9 +47,10 @@
 
 .about-history-timeline {
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    animation: slideInFromLeft 1s ease-out;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    justify-content: center; /* Centraliza os itens no espaço disponível */
+    gap: 1rem; /* Reduz o espaçamento entre os blocos */
+    padding: 1rem;
 }
 
 .history-event {
@@ -58,7 +59,8 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1;
+    max-width: calc(33.333% - 1rem);
+    flex: 1 1 calc(33.333% - 1rem);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -98,7 +100,7 @@
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.3;
 }
 
 .about-team-grid {
@@ -233,3 +235,152 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+    /* Banner */
+    .about-banner-section {
+      padding: 3rem 1rem;
+    }
+  
+    .about-banner-title {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+  
+    .about-banner-text {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  
+    /* Linha do Tempo */
+    .about-history-section {
+      padding: 2rem 1rem;
+    }
+  
+    .about-history-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+  
+    .about-history-timeline {
+      gap: 1rem;
+    }
+  
+    .history-event {
+      flex: 1 1 calc(50% - 1rem); /* Dois blocos por linha */
+      max-width: calc(50% - 1rem);
+    }
+  
+    /* Equipe */
+    .about-team-section {
+      padding: 2rem 1rem;
+    }
+  
+    .about-team-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .about-team-description {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+    }
+  
+    .team-card {
+      padding: 1.7rem; /* Padding ajustado para tamanho médio */
+      max-width: 250px; /* Tamanho intermediário do card */
+      text-align: center;
+    }
+  
+    .team-image-container {
+      padding: 4px; /* Borda moderada */
+    }
+  
+    .team-image {
+      width: 85%; /* Tamanho moderado da imagem */
+    }
+  
+    .team-name {
+      font-size: 1.1rem; /* Fonte levemente maior para o nome */
+      margin-bottom: 0.4rem;
+    }
+  
+    .team-role {
+      font-size: 1rem; /* Tamanho mais legível para a função */
+    }
+  
+    /* Valores e Missão */
+    .about-values-mission-section {
+      padding: 2rem 1rem;
+    }
+  
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+  
+    .section-description {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  
+    .values-mission-container {
+      gap: 1.5rem;
+    }
+  
+    .mission-block,
+    .values-block {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Banner */
+    .about-banner-title {
+      font-size: 1.8rem;
+    }
+  
+    .about-banner-text {
+      font-size: 0.9rem;
+    }
+  
+    /* Linha do Tempo */
+    .history-event {
+      flex: 1 1 100%; /* Um bloco por linha */
+      max-width: 100%;
+    }
+  
+    /* Equipe */
+    .team-card {
+      padding: 1rem; /* Um pouco menor para telas pequenas */
+      max-width: 200px; /* Compacta um pouco mais */
+    }
+  
+    .team-image {
+      width: 80%; /* Ajusta o tamanho da imagem */
+    }
+  
+    .team-name {
+      font-size: 1rem; /* Tamanho ajustado */
+    }
+  
+    .team-role {
+      font-size: 0.9rem; /* Tamanho ajustado */
+    }
+  
+    /* Valores e Missão */
+    .section-title {
+      font-size: 1.4rem;
+    }
+  
+    .section-description {
+      font-size: 0.8rem;
+    }
+  
+    .mission-block,
+    .values-block {
+      padding: 1rem;
+    }
+  }
+  

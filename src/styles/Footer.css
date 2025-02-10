@@ -100,3 +100,103 @@
     margin: 0;
   }
   
+  @media (max-width: 768px) {
+    /* Geral */
+    .footer-container {
+      padding: 2rem 1rem;
+    }
+  
+    /* Sessão Principal */
+    .footer-main {
+      grid-template-columns: 1fr; /* Cada seção em uma linha */
+      gap: 1.5rem; /* Reduz o espaçamento entre seções */
+      text-align: center; /* Centraliza o conteúdo */
+    }
+  
+    /* Logo e Descrição */
+    .footer-logo {
+      max-width: 120px; /* Reduz o tamanho da logo */
+      margin-bottom: 1rem;
+    }
+  
+    .footer-description {
+      font-size: 0.9rem; /* Reduz o tamanho da fonte */
+      line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+    }
+  
+    /* Links Úteis */
+    .footer-links-title {
+      font-size: 1.3rem; /* Ajusta o tamanho do título */
+      margin-bottom: 0.8rem;
+    }
+  
+    .footer-link {
+      font-size: 0.9rem; /* Reduz o tamanho dos links */
+    }
+  
+    /* Redes Sociais */
+    .footer-social-title {
+      font-size: 1.3rem; /* Ajusta o tamanho do título */
+      margin-bottom: 0.8rem;
+    }
+  
+    .footer-social-icons {
+      gap: 0.8rem; /* Reduz o espaçamento entre os ícones */
+    }
+  
+    .footer-social-icon {
+      font-size: 1.2rem; /* Reduz o tamanho dos ícones */
+    }
+  
+    /* Rodapé Inferior */
+    .footer-bottom {
+      font-size: 0.8rem; /* Reduz o tamanho da fonte */
+      padding-top: 0.8rem; /* Ajusta o espaçamento superior */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Geral */
+    .footer-container {
+      padding: 1.5rem 0.5rem; /* Reduz o padding geral */
+    }
+  
+    /* Sessão Principal */
+    .footer-main {
+      gap: 1rem; /* Reduz ainda mais o espaçamento */
+    }
+  
+    /* Logo e Descrição */
+    .footer-logo {
+      max-width: 100px; /* Reduz ainda mais a logo */
+    }
+  
+    .footer-description {
+      font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+    }
+  
+    /* Links Úteis */
+    .footer-links-title {
+      font-size: 1.1rem; /* Reduz o tamanho do título */
+    }
+  
+    .footer-link {
+      font-size: 0.8rem; /* Ajusta o tamanho dos links */
+    }
+  
+    /* Redes Sociais */
+    .footer-social-title {
+      font-size: 1.1rem; /* Ajusta o tamanho do título */
+    }
+  
+    .footer-social-icon {
+      font-size: 1rem; /* Ajusta o tamanho dos ícones */
+    }
+  
+    /* Rodapé Inferior */
+    .footer-bottom {
+      font-size: 0.7rem; /* Reduz ainda mais o tamanho da fonte */
+      padding-top: 0.5rem;
+    }
+  }
+  

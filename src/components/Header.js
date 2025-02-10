@@ -35,11 +35,7 @@ const Header = () => {
         <Link to="/contact" className="nav-link" onClick={toggleMenu}>
           Contato
         </Link>
-        <Link
-          to="/client-area" // Corrigido para a rota do React Router
-          className="cta-button"
-          onClick={toggleMenu}
-        >
+        <Link to="/client-area" className="cta-button" onClick={toggleMenu}>
           Área do Cliente
         </Link>
       </nav>

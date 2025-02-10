@@ -7,10 +7,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
+  html, body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    scroll-behavior: smooth; /* Habilita rolagem suave */
+    overflow-x: hidden; /* Evita barras de rolagem laterais */
   }
 
   a {

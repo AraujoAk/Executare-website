@@ -222,3 +222,114 @@
     transform: translateY(-5px);
   }
 }
+
+@media (max-width: 768px) {
+
+  /* Banner */
+  .services-banner-section {
+    padding: 3rem 1rem; /* Reduz o padding */
+    background-position: center; /* Centraliza o fundo no mobile */
+  }
+
+  .services-banner-title {
+    font-size: 2rem; /* Ajusta o tamanho do título */
+    margin-bottom: 1rem;
+  }
+
+  .services-banner-description {
+    font-size: 1rem; /* Reduz o tamanho do texto */
+    line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+  }
+
+  /* Lista de Serviços */
+  .services-list-section {
+    padding: 3rem 1rem;
+  }
+
+  .services-list-title {
+    font-size: 1.8rem; /* Reduz o tamanho do título */
+    margin-bottom: 1.5rem;
+  }
+
+  .services-list-grid {
+    grid-template-columns: 1fr; /* Exibe os cards em uma única coluna */
+    gap: 1.5rem; /* Reduz o espaçamento entre os cards */
+  }
+
+  .service-card {
+    padding: 1.5rem; /* Reduz o padding interno dos cards */
+  }
+
+  .service-icon {
+    font-size: 2.5rem; /* Ajusta o tamanho do ícone */
+    margin-bottom: 1rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem; /* Reduz o tamanho do título do card */
+    margin-bottom: 0.8rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem; /* Ajusta o texto */
+  }
+
+  .service-more-button {
+    font-size: 0.9rem; /* Ajusta o tamanho do botão */
+    padding: 0.6rem 1.2rem; /* Ajusta o padding do botão */
+  }
+
+  /* Vantagens */
+  .services-benefits-section {
+    padding: 3rem 1rem;
+  }
+
+  .services-benefits-title {
+    font-size: 1.8rem; /* Reduz o tamanho do título */
+    margin-bottom: 1.5rem;
+  }
+
+  .services-benefits-grid {
+    grid-template-columns: 1fr; /* Exibe os cards em uma única coluna */
+    gap: 1.5rem; /* Reduz o espaçamento entre os cards */
+  }
+
+  .benefit-card {
+    padding: 1.5rem; /* Reduz o padding interno dos cards */
+  }
+
+  .benefit-icon {
+    font-size: 2.5rem; /* Ajusta o tamanho do ícone */
+    margin-bottom: 1rem;
+  }
+
+  .benefit-title {
+    font-size: 1.2rem; /* Reduz o tamanho do título do card */
+    margin-bottom: 0.8rem;
+  }
+
+  .benefit-description {
+    font-size: 0.9rem; /* Ajusta o texto */
+  }
+
+  /* Call to Action */
+  .services-cta-section {
+    padding: 3rem 1rem; /* Reduz o padding */
+  }
+
+  .services-cta-title {
+    font-size: 1.8rem; /* Ajusta o tamanho do título */
+    margin-bottom: 1rem;
+  }
+
+  .services-cta-description {
+    font-size: 1rem; /* Ajusta o tamanho do texto */
+    line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+  }
+
+  .services-cta-button {
+    font-size: 1rem; /* Ajusta o tamanho do botão */
+    padding: 0.6rem 1.5rem; /* Reduz o padding do botão */
+    border-radius: 20px; /* Ajusta o formato do botão */
+  }
+}
