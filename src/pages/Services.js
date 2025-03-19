@@ -23,38 +23,40 @@ const Services = () => {
       <section className="services-list-section fade-in">
         <h2 className="services-list-title bounce-in">O que Oferecemos</h2>
         <div className="services-list-grid">
+          
+          {/* Contabilidade Geral (dividida em três áreas) */}
           <div className="service-card fade-in-card">
             <i className="fas fa-chart-line service-icon"></i>
             <h3 className="service-title">Contabilidade Geral</h3>
-            <p className="service-description">
-              Gerenciamento completo da contabilidade empresarial.
-            </p>
+            <p className="service-description">Dividida em três áreas principais:</p>
+            <ul className="service-sublist">
+              <li><strong>Setor Tributário / Fiscal:</strong> Responsável pelo cumprimento das leis fiscais, envio de declarações e cálculos de impostos.</li>
+              <li><strong>Departamento Pessoal:</strong> Gestão de funcionários, folha de pagamento, admissões e passivos trabalhistas.</li>
+              <li><strong>Setor Contábil:</strong> Controle das movimentações financeiras e identificação de riscos patrimoniais.</li>
+            </ul>
             <button className="service-more-button bounce-in">Saiba Mais</button>
           </div>
-          <div className="service-card fade-in-card">
-            <i className="fas fa-file-invoice service-icon"></i>
-            <h3 className="service-title">Consultoria Tributária</h3>
-            <p className="service-description">
-              Planejamento estratégico para otimizar impostos.
-            </p>
-            <button className="service-more-button bounce-in">Saiba Mais</button>
-          </div>
-          <div className="service-card fade-in-card">
-            <i className="fas fa-users service-icon"></i>
-            <h3 className="service-title">Gestão de Folha</h3>
-            <p className="service-description">
-              Simplificação de processos e folha de pagamento.
-            </p>
-            <button className="service-more-button bounce-in">Saiba Mais</button>
-          </div>
+
+          {/* Consultoria Financeira e Empresarial */}
           <div className="service-card fade-in-card">
             <i className="fas fa-briefcase service-icon"></i>
-            <h3 className="service-title">Planejamento Estratégico</h3>
+            <h3 className="service-title">Consultoria Financeira e Empresarial</h3>
             <p className="service-description">
-              Definição de metas e estratégias para o crescimento empresarial.
+              Assessoria estratégica para crescimento empresarial, planejamento financeiro e otimização de recursos.
             </p>
             <button className="service-more-button bounce-in">Saiba Mais</button>
           </div>
+
+          {/* Planejamento Estratégico */}
+          <div className="service-card fade-in-card">
+            <i className="fas fa-lightbulb service-icon"></i>
+            <h3 className="service-title">Planejamento Estratégico</h3>
+            <p className="service-description">
+              Definição de metas e estratégias para o crescimento sustentável dos negócios.
+            </p>
+            <button className="service-more-button bounce-in">Saiba Mais</button>
+          </div>
+
         </div>
       </section>
 

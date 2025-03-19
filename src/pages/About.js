@@ -18,23 +18,15 @@ const About = () => {
         <h2 className="about-history-title">Nossa Jornada</h2>
         <div className="about-history-timeline">
           <div className="history-event">
-            <span className="history-year">2015</span>
+            <span className="history-year">2009</span>
             <p className="history-description">
-              Fundação da Executare com foco em contabilidade para MEIs e
-              pequenas empresas.
-            </p>
-          </div>
-          <div className="history-event">
-            <span className="history-year">2018</span>
-            <p className="history-description">
-              Expansão para serviços de consultoria financeira e planejamento
-              estratégico.
+              Início da trajetória na contabilidade, adquirindo experiência e especialização no setor.
             </p>
           </div>
           <div className="history-event">
             <span className="history-year">2022</span>
             <p className="history-description">
-              Lançamento de soluções digitais para gestão eficiente e moderna.
+              Fundação da Executare, consolidando um novo modelo de serviços contábeis e consultoria financeira.
             </p>
           </div>
         </div>
@@ -51,64 +43,40 @@ const About = () => {
           <div className="team-card">
             <div className="team-image-container">
               <img
-                src="https://img.freepik.com/fotos-gratis/aluno-feliz-com-penteado-afro-mostra-dentes-brancos-fica-de-bom-humor-depois-das-aulas_273609-16608.jpg?t=st=1737810067~exp=1737813667~hmac=5634644d7e525b82207a6bb6f4942cefa8d59b9e53c40745c1eeb6143dc8a7aa&w=900"
-                alt="João Almeida"
+                src="https://img.freepik.com/vetores-premium/ilustracao-plana-vetorial-em-escala-de-cinza-avatar-perfil-de-usuario-pessoa-icone-imagem-de-perfil-adequado-para-perfis-de-midia-social-icones-protetores-de-tela-e-como-um-modelo-x9xa_719432-1230.jpg?w=900" 
+                alt="Tarciane"
                 className="team-image"
               />
             </div>
-            <h3 className="team-name">João Almeida</h3>
-            <p className="team-role">Especialista em Contabilidade</p>
-          </div>
-          <div className="team-card">
-            <div className="team-image-container">
-              <img
-                src="https://img.freepik.com/fotos-premium/cosmetologista-jovem-em-fundo-branco-retrato-de-esteticista-profissional_154092-467.jpg?w=900"
-                alt="Maria Silva"
-                className="team-image"
-              />
-            </div>
-            <h3 className="team-name">Maria Silva</h3>
-            <p className="team-role">Consultora Financeira</p>
-          </div>
-          <div className="team-card">
-            <div className="team-image-container">
-              <img
-                src="https://img.freepik.com/fotos-premium/retrato-de-um-jovem-sorridente-vestindo-camisa_171337-50383.jpg?w=900"
-                alt="Pedro Santos"
-                className="team-image"
-              />
-            </div>
-            <h3 className="team-name">Pedro Santos</h3>
-            <p className="team-role">Analista de Dados</p>
+            <h3 className="team-name">Tarciane</h3>
+            <p className="team-role">Nova Integrante da Equipe</p>
           </div>
         </div>
       </section>
 
+      {/* Missão, Visão e Valores */}
       <section className="about-values-mission-section">
         <div className="values-mission-container">
           <div className="mission-block">
-            <h2 className="section-title">Nossa Missão</h2>
+            <h2 className="section-title">Missão</h2>
             <p className="section-description">
-              Capacitar empresas a prosperarem por meio de soluções contábeis e
-              financeiras inovadoras.
+              Atender às necessidades dos clientes, buscando a satisfação e o crescimento, 
+              com um atendimento diferenciado e na qualidade dos serviços prestados, 
+              dentro dos padrões contábeis.
+            </p>
+          </div>
+          <div className="vision-block">
+            <h2 className="section-title">Visão</h2>
+            <p className="section-description">
+              Ser referência no mercado de consultoria e assessoria contábil e empresarial, 
+              tornando-nos eficientes e importantes para nossos clientes, parceiros e colaboradores.
             </p>
           </div>
           <div className="values-block">
-            <h2 className="section-title">Nossos Valores</h2>
-            <ul className="values-list">
-              <li className="value-item">
-                <i className="fas fa-check-circle value-icon"></i> Inovação
-                Constante
-              </li>
-              <li className="value-item">
-                <i className="fas fa-check-circle value-icon"></i> Ética e
-                Transparência
-              </li>
-              <li className="value-item">
-                <i className="fas fa-check-circle value-icon"></i> Compromisso
-                com Resultados
-              </li>
-            </ul>
+            <h2 className="section-title">Valores</h2>
+            <p className="section-description">
+              Baseado-se na legalidade, honestidade, ética e transparência.
+            </p>
           </div>
         </div>
       </section>

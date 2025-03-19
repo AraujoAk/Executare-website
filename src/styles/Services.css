@@ -43,11 +43,15 @@
 }
 
 .service-card {
-  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center;
+  height: 100%; /* Garante que o card ocupe toda a altura */
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -64,14 +68,29 @@
 
 .service-title {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-weight: bold;
   color: #002f4b;
+  margin-bottom: 0.5rem;
 }
 
 .service-description {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-sublist {
+  text-align: left;
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.service-sublist li {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  color: #002f4b;
 }
 
 .service-more-button {

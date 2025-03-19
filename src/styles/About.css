@@ -1,386 +1,241 @@
 /* Geral */
 .about-container {
-    font-family: "Mont", sans-serif;
-    color: #002f4b;
-    overflow-x: hidden;
+  font-family: "Mont", sans-serif;
+  color: #002f4b;
+  overflow-x: hidden;
 }
 
 /* Banner */
 .about-banner-section {
-    background: linear-gradient(
-            rgba(0, 47, 75, 0.8),
-            rgba(0, 47, 75, 0.8)
-        ),
-        url("https://img.freepik.com/fotos-premium/oculos-com-a-calculadora-no-fundo-do-papel-de-grafico-grafico_39768-1711.jpg?w=900") center/cover no-repeat;
-    text-align: center;
-    color: #fff;
-    padding: 4rem 1.5rem;
-    animation: fadeIn 1.5s ease-in-out;
+  background: linear-gradient(
+          rgba(0, 47, 75, 0.8),
+          rgba(0, 47, 75, 0.8)
+      ),
+      url("https://img.freepik.com/fotos-premium/oculos-com-a-calculadora-no-fundo-do-papel-de-grafico-grafico_39768-1711.jpg?w=900") center/cover no-repeat;
+  text-align: center;
+  color: #fff;
+  padding: 4rem 1.5rem;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .about-banner-title {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    color: #f69149;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #f69149;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .about-banner-text {
-    font-size: 1.1rem;
-    line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 /* Linha do Tempo */
 .about-history-section {
-    text-align: center;
-    padding: 3rem 1.5rem;
-    background: #f8f9fa;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: #f8f9fa;
 }
 
 .about-history-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #002f4b;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #002f4b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .about-history-timeline {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem linha */
-    justify-content: center; /* Centraliza os itens no espaço disponível */
-    gap: 1rem; /* Reduz o espaçamento entre os blocos */
-    padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .history-event {
-    background: linear-gradient(to bottom, #eef2f3, #ffffff);
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: calc(33.333% - 1rem);
-    flex: 1 1 calc(33.333% - 1rem);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to bottom, #eef2f3, #ffffff);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: calc(33.333% - 1rem);
+  flex: 1 1 calc(33.333% - 1rem);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .history-event:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .history-year {
-    font-size: 1.5rem;
-    color: #f69149;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  color: #f69149;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .history-description {
-    font-size: 1rem;
-    color: #555;
+  font-size: 1rem;
+  color: #555;
 }
 
 /* Equipe */
 .about-team-section {
-    padding: 3rem 1.5rem;
-    text-align: center;
-    background: linear-gradient(to bottom, #eef8f4, #ffffff);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #eef8f4, #ffffff);
 }
 
 .about-team-title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #002f4b;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #002f4b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .about-team-description {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #555;
-    line-height: 1.3;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+  line-height: 1.3;
 }
 
 .about-team-grid {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .team-card {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    max-width: 280px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .team-image-container {
-    border: 4px solid #f69149;
-    border-radius: 50%;
-    padding: 5px;
-    margin-bottom: 1rem;
+  border: 4px solid #f69149;
+  border-radius: 50%;
+  padding: 5px;
+  margin-bottom: 1rem;
 }
 
 .team-image {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
 .team-card:hover .team-image {
-    transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 .team-name {
-    font-size: 1.5rem;
-    color: #002f4b;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  color: #002f4b;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .team-role {
-    font-size: 1rem;
-    color: #555;
+  font-size: 1rem;
+  color: #555;
 }
 
-/* Valores e Missão */
+/* Missão, Visão e Valores */
 .about-values-mission-section {
-    padding: 4rem 1.5rem;
-    background: #eef8f4;
+  padding: 4rem 1.5rem;
+  background: #eef8f4;
 }
 
 .values-mission-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .mission-block,
+.vision-block,
 .values-block {
-    background: linear-gradient(to top, #ffffff, #f8f9fa);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to top, #ffffff, #f8f9fa);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .mission-block:hover,
+.vision-block:hover,
 .values-block:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
-    font-size: 1.8rem;
-    color: #002f4b;
-    margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #002f4b;
+  margin-bottom: 1rem;
 }
 
 .section-description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-}
-
-.values-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.value-item {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 0.8rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.value-icon {
-    font-size: 1.2rem;
-    color: #f69149;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
 }
 
 /* Animações */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 @keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
-    /* Banner */
-    .about-banner-section {
-      padding: 3rem 1rem;
-    }
-  
-    .about-banner-title {
-      font-size: 2rem;
-      margin-bottom: 0.8rem;
-    }
-  
-    .about-banner-text {
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-  
-    /* Linha do Tempo */
-    .about-history-section {
-      padding: 2rem 1rem;
-    }
-  
-    .about-history-title {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-  
-    .about-history-timeline {
-      gap: 1rem;
-    }
-  
-    .history-event {
-      flex: 1 1 calc(50% - 1rem); /* Dois blocos por linha */
-      max-width: calc(50% - 1rem);
-    }
-  
-    /* Equipe */
-    .about-team-section {
-      padding: 2rem 1rem;
-    }
-  
-    .about-team-title {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-  
-    .about-team-description {
-      font-size: 1rem;
-      line-height: 1.4;
-      margin-bottom: 1.5rem;
-    }
-  
-    .team-card {
-      padding: 1.7rem; /* Padding ajustado para tamanho médio */
-      max-width: 250px; /* Tamanho intermediário do card */
-      text-align: center;
-    }
-  
-    .team-image-container {
-      padding: 4px; /* Borda moderada */
-    }
-  
-    .team-image {
-      width: 85%; /* Tamanho moderado da imagem */
-    }
-  
-    .team-name {
-      font-size: 1.1rem; /* Fonte levemente maior para o nome */
-      margin-bottom: 0.4rem;
-    }
-  
-    .team-role {
-      font-size: 1rem; /* Tamanho mais legível para a função */
-    }
-  
-    /* Valores e Missão */
-    .about-values-mission-section {
-      padding: 2rem 1rem;
-    }
-  
-    .section-title {
+  .values-mission-container {
+      grid-template-columns: 1fr; /* Empilhar itens em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
       font-size: 1.6rem;
-      margin-bottom: 0.8rem;
-    }
-  
-    .section-description {
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-  
-    .values-mission-container {
-      gap: 1.5rem;
-    }
-  
-    .mission-block,
-    .values-block {
-      padding: 1.5rem;
-    }
   }
-  
-  @media (max-width: 480px) {
-    /* Banner */
-    .about-banner-title {
-      font-size: 1.8rem;
-    }
-  
-    .about-banner-text {
+
+  .section-description {
       font-size: 0.9rem;
-    }
-  
-    /* Linha do Tempo */
-    .history-event {
-      flex: 1 1 100%; /* Um bloco por linha */
-      max-width: 100%;
-    }
-  
-    /* Equipe */
-    .team-card {
-      padding: 1rem; /* Um pouco menor para telas pequenas */
-      max-width: 200px; /* Compacta um pouco mais */
-    }
-  
-    .team-image {
-      width: 80%; /* Ajusta o tamanho da imagem */
-    }
-  
-    .team-name {
-      font-size: 1rem; /* Tamanho ajustado */
-    }
-  
-    .team-role {
-      font-size: 0.9rem; /* Tamanho ajustado */
-    }
-  
-    /* Valores e Missão */
-    .section-title {
-      font-size: 1.4rem;
-    }
-  
-    .section-description {
-      font-size: 0.8rem;
-    }
-  
-    .mission-block,
-    .values-block {
-      padding: 1rem;
-    }
   }
-  
+
+  .mission-block,
+  .vision-block,
+  .values-block {
+      padding: 1.2rem;
+  }
+}

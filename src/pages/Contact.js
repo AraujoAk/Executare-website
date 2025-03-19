@@ -37,18 +37,20 @@ const Contact = () => {
           <div className="contact-info-item fade-in-card">
             <i className="fas fa-phone-alt contact-icon"></i>
             <h3 className="contact-info-heading">Telefone</h3>
-            <p className="contact-info-text">(11) 1234-5678</p>
+            <p className="contact-info-text"><a href="tel:+5584999848448">84 99984-8448</a></p>
           </div>
           <div className="contact-info-item fade-in-card">
             <i className="fas fa-envelope contact-icon"></i>
             <h3 className="contact-info-heading">Email</h3>
-            <p className="contact-info-text">contato@executare.com.br</p>
+            <p className="contact-info-text">
+              <a href="mailto:executarecont@gmail.com">executarecont@gmail.com</a>
+            </p>
           </div>
           <div className="contact-info-item fade-in-card">
             <i className="fas fa-map-marker-alt contact-icon"></i>
             <h3 className="contact-info-heading">Endereço</h3>
             <p className="contact-info-text">
-              Rua da Contabilidade, 123 - São Paulo, SP
+              Rua Jaguarari 2281, sala 11, Lagoa Nova, Natal/RN
             </p>
           </div>
         </div>
@@ -59,7 +61,7 @@ const Contact = () => {
         <h2 className="contact-map-title bounce-in">Nosso Local</h2>
         <iframe
           className="contact-map fade-in-card"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0030806767375!2d-46.656509285022194!3d-23.576052884674415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c86f575e03%3A0x46f093b9b2d8d441!2sAvenida%20Paulista%2C%20157%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-902!5e0!3m2!1sen!2sbr!4v1675892827886!5m2!1sen!2sbr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31564.394820126394!2d-35.21762866557619!3d-5.821545895560456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff870d05a95f%3A0x5e54a1d6c09ad16c!2sRua%20Jaguarari%2C%202281%20-%20Lagoa%20Nova%2C%20Natal%20-%20RN!5e0!3m2!1spt-BR!2sbr!4v1710773839077!5m2!1spt-BR!2sbr"
           allowFullScreen=""
           loading="lazy"
         ></iframe>
