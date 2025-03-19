@@ -38,17 +38,39 @@
 
 .services-list-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 2rem;
+  justify-content: center;
 }
 
+/* Estilo específico para "Contabilidade Geral" */
+.service-card.contabilidade-geral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  text-align: left;
+  width: 100%;
+  max-width: 600px; /* Aumenta o espaço para melhor distribuição do texto */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card.contabilidade-geral:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização dos cards em geral */
 .service-card {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
-  height: 100%; /* Garante que o card ocupe toda a altura */
+  height: 100%; 
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -60,39 +82,54 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Ícones */
 .service-icon {
   font-size: 3rem;
   color: #f69149;
   margin-bottom: 1rem;
 }
 
+/* Títulos dos cards */
 .service-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #002f4b;
   margin-bottom: 0.5rem;
 }
 
+/* Descrição geral */
 .service-description {
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
 }
 
+/* Ajuste na lista */
 .service-sublist {
   text-align: left;
-  padding: 0;
-  margin-top: 1rem;
+  padding-left: 0;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.8; /* Maior espaçamento para leitura */
 }
 
 .service-sublist li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   color: #002f4b;
+  display: flex;
+  align-items: flex-start;
 }
 
+/* Destaque para os títulos dentro da lista */
+.service-sublist li strong {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #002f4b;
+  display: inline-block;
+  min-width: 180px; /* Mantém um espaçamento uniforme */
+}
+
+/* Botão */
 .service-more-button {
   background-color: #f69149;
   color: #fff;
@@ -101,13 +138,14 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  align-self: center;
 }
 
 .service-more-button:hover {
   background-color: #d17b3c;
 }
 
-/* Vantagens */
+/* Ajustes na seção de vantagens */
 .services-benefits-section {
   padding: 3rem 1.5rem;
   text-align: center;
@@ -187,6 +225,7 @@
 .services-cta-button:hover {
   background-color: #d17b3c;
 }
+
 
 /* Efeito de Entrada Suave */
 .fade-in {
@@ -273,10 +312,14 @@
   .services-list-grid {
     grid-template-columns: 1fr; /* Exibe os cards em uma única coluna */
     gap: 1.5rem; /* Reduz o espaçamento entre os cards */
+    justify-content: center;
   }
 
   .service-card {
-    padding: 1.5rem; /* Reduz o padding interno dos cards */
+    width: 90%; /* Garante que os itens fiquem ajustados na tela */
+    max-width: 100%;
+    padding: 2rem;
+    text-align: left; /* Mantém o alinhamento uniforme */
   }
 
   .service-icon {
@@ -285,12 +328,40 @@
   }
 
   .service-title {
-    font-size: 1.2rem; /* Reduz o tamanho do título do card */
-    margin-bottom: 0.8rem;
+    font-size: 1.4rem; /* Ajusta o tamanho do título do card */
+    margin-bottom: 0.5rem;
   }
 
   .service-description {
     font-size: 0.9rem; /* Ajusta o texto */
+  }
+
+  /* Ajustes específicos para "Contabilidade Geral" */
+  .service-card.contabilidade-geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Mantém alinhado à esquerda */
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .service-sublist {
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 0;
+    margin-top: 1rem;
+    list-style: none;
+  }
+
+  .service-sublist li {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 0.8rem;
   }
 
   .service-more-button {
